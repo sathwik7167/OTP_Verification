@@ -1,0 +1,49 @@
+* { box-sizing: border-box; }
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #172033;
+  background: #f2f5fb;
+}
+body { margin: 0; min-height: 100vh; }
+.page {
+  min-height: 100vh; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; padding: 24px;
+}
+.card {
+  width: min(100%, 430px); background: #fff; padding: 34px;
+  border: 1px solid #e4e9f2; border-radius: 22px;
+  box-shadow: 0 18px 55px rgba(31, 47, 84, .10);
+}
+.icon {
+  width: 58px; height: 58px; display: grid; place-items: center;
+  border-radius: 17px; background: #e8efff; font-size: 28px; margin-bottom: 20px;
+}
+.eyebrow { color: #4c65c7; font-size: 11px; font-weight: 800; letter-spacing: .15em; }
+h1 { margin: 8px 0; font-size: 30px; letter-spacing: -.04em; }
+.subtitle { margin: 0 0 27px; color: #667085; line-height: 1.55; }
+label { display: block; font-size: 13px; font-weight: 700; margin: 15px 0 8px; }
+input {
+  width: 100%; padding: 13px 14px; border: 1px solid #d7deea;
+  border-radius: 11px; font-size: 15px; outline: none; background: #fff;
+}
+input:focus { border-color: #536fe5; box-shadow: 0 0 0 3px rgba(83,111,229,.13); }
+button {
+  width: 100%; border: 0; border-radius: 11px; margin-top: 13px;
+  padding: 13px 16px; background: #425bd5; color: white; font-size: 15px;
+  font-weight: 750; cursor: pointer; transition: transform .12s, opacity .12s;
+}
+button:hover { transform: translateY(-1px); }
+button:disabled { cursor: not-allowed; opacity: .55; transform: none; }
+.otp-area { margin-top: 15px; padding-top: 5px; }
+button.verify { background: #172033; }
+.status { min-height: 22px; margin: 18px 0 0; font-size: 13px; line-height: 1.5; }
+.status.success { color: #147a4b; }
+.status.error { color: #b42318; }
+.status.info { color: #475467; }
+.timer { color: #667085; font-size: 12px; min-height: 15px; margin: 3px 0; }
+.demo-note {
+  background: #fff8e6; border: 1px solid #f5e3ac; border-radius: 10px;
+  padding: 11px 12px; color: #795b15; font-size: 12px; line-height: 1.5; margin: 17px 0 0;
+}
+footer { color: #7b8497; font-size: 12px; margin-top: 18px; text-align: center; }
+@media (max-width: 480px) { .card { padding: 25px 21px; } h1 { font-size: 26px; } }
